@@ -1,0 +1,14 @@
+{
+  "Blocks": {
+    "TemplateBlock:0": {
+      "DisplayName": "示例方块",
+      "Description": "这是一个来自生存战争示例模组的方块",
+      "CRDescription:0": "无"
+    }
+  },
+  "ContentWidgets": {
+    "TemplateWidget": {
+      "1": "示例部件"
+    }
+  }
+}

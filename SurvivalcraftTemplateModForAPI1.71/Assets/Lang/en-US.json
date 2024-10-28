@@ -1,0 +1,14 @@
+{
+  "Blocks": {
+    "TemplateBlock:0": {
+      "DisplayName": "Template Block",
+      "Description": "This is a block from Survivalcraft Template Mod.",
+      "CRDescription:0": "Nothing"
+    }
+  },
+  "ContentWidgets": {
+    "TemplateWidget": {
+      "1": "Template Widget"
+    }
+  }
+}

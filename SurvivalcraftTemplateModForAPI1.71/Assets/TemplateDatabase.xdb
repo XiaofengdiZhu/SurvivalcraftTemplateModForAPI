@@ -1,0 +1,18 @@
+﻿<Mod>
+	<ProjectTemplate Name="Project" Guid="85023bf8-1c90-4dd1-9442-e6c13691d078">
+		<MemberSubsystemTemplate Name="SubsystemTemplate" Guid="3f8d8e1a-6ff4-4327-b546-d8d17e0f49f6" InheritanceParent="a3914c13-7801-46a6-b23a-9e2b36e9defb">
+			<Parameter Name="Class" Guid="e0fe773f-c6e9-4fba-8211-72e25ef8a79f" Value="Game.SubsystemTemplate" Type="string"/>
+		</MemberSubsystemTemplate>
+	</ProjectTemplate>
+	<Folder Name="Entities" Guid="5fcdf35f-7001-442c-883e-e0502b15d291">
+		<EntityTemplate Name="Player" Guid="4be6c1c5-d65d-4537-8a8b-a391969e6dc2">
+			<MemberComponentTemplate Name="ComponentTemplate" Guid="bb7b00c2-32b6-44b8-bf86-e3ed640caa99" InheritanceParent="28680941-ec24-4ebc-84b9-17d42de6204c"/>
+		</EntityTemplate>
+	</Folder>
+	<Folder Name="Gameplay" Guid="d3d4b692-acc9-4128-9b99-a5acf1de1fbb">
+		<ComponentTemplate Name="ComponentTemplate" Guid="28680941-ec24-4ebc-84b9-17d42de6204c" InheritanceParent="b05700ed-7e4e-4679-98f5-b597f421496b">
+			<Parameter Name="Class" Guid="794fe726-4fc3-48ea-97fd-651a5434cc97" Value="Game.ComponentTemplate" Type="string"/>
+			<Parameter Name="LoadOrder" Guid="d9a3ef48-d3dd-480a-8b9d-f0ae675079fb" Value="2147483647" Type="int"/>
+		</ComponentTemplate>
+	</Folder>
+</Mod>

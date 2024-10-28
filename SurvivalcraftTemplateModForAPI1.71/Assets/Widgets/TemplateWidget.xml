@@ -1,0 +1,3 @@
+<TemplateWidget xmlns="runtime-namespace:Game" HorizontalAlignment="Center">
+	<LabelWidget Text="[TemplateWidget:1]"/>
+</TemplateWidget>
