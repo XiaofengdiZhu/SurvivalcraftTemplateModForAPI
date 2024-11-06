@@ -31,18 +31,9 @@
 		<WarningLevel>4</WarningLevel>
 	</PropertyGroup>
 	<ItemGroup>
-		<Reference Include="Engine">
-			<HintPath>reference\Engine.dll</HintPath>
-			<Private>False</Private>
-		</Reference>
-		<Reference Include="EntitySystem">
-			<HintPath>reference\EntitySystem.dll</HintPath>
-			<Private>False</Private>
-		</Reference>
-		<Reference Include="Survivalcraft">
-			<HintPath>reference\Survivalcraft.dll</HintPath>
-			<Private>False</Private>
-		</Reference>
+		<PackageReference Include="SurvivalcraftAPI.Engine" Version="1.7.2.2"/>
+		<PackageReference Include="SurvivalcraftAPI.EntitySystem" Version="1.7.2.2"/>
+		<PackageReference Include="SurvivalcraftAPI.Survivalcraft" Version="1.7.2.2"/>
 	</ItemGroup>
 	<ItemGroup>
 		<None Update="modinfo.json">

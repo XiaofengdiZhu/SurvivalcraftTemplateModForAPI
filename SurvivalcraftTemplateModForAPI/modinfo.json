@@ -1,0 +1,11 @@
+{
+  "Name": "Survivalcraft Template Mod 生存战争示例模组",
+  "Version": "1.0",
+  "ApiVersion": "1.72",
+  "Description": "This is an simple mod project template for Survivalcraft API 1.72 这是一个适用于生存战争API1.72的简单模组示例项目",
+  "ScVersion": "2.3.0.0",
+  "Link": "https://github.com/XiaofengdiZhu/SurvivalcraftTemplateModForAPI",
+  "Author": "销锋镝铸",
+  "PackageName": "xfdz.SurvivalcraftTemplateMod",
+  "Dependencies": []
+}

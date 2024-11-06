@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SurvivalcraftTemplateModForAPI1.71", "SurvivalcraftTemplateModForAPI1.71\SurvivalcraftTemplateModForAPI1.71.csproj", "{081F5C23-AE23-4FF0-AB1F-6507B0AF435A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SurvivalcraftTemplateModForAPI", "SurvivalcraftTemplateModForAPI\SurvivalcraftTemplateModForAPI.csproj", "{081F5C23-AE23-4FF0-AB1F-6507B0AF435A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -2,7 +2,8 @@
 
 namespace Game {
     public class TemplateBlock : CubeBlock {
-        public const int Index = 987;
+        //This is not needed anymore:
+        //public const int Index = 987;
 
         public override void Initialize() {
             base.Initialize();
