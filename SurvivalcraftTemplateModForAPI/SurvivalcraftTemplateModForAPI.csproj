@@ -53,4 +53,7 @@
 		<Compile Include="TemplateModLoader.cs"/>
 		<Compile Include="TemplateWidget.cs"/>
 	</ItemGroup>
+	<ItemGroup>
+	  <None Include=".template.config\template.json" />
+	</ItemGroup>
 </Project>
