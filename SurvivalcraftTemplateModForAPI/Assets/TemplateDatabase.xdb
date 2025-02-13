@@ -1,4 +1,4 @@
-﻿<Mod>
+﻿<Mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://gitee.com/THPRC/survivalcraft-api/raw/SCAPI1.8/Survivalcraft/Content/Assets/Database.xsd">
 	<ProjectTemplate Name="Project" Guid="85023bf8-1c90-4dd1-9442-e6c13691d078">
 		<MemberSubsystemTemplate Name="SubsystemTemplate" Guid="3f8d8e1a-6ff4-4327-b546-d8d17e0f49f6" InheritanceParent="a3914c13-7801-46a6-b23a-9e2b36e9defb">
 			<Parameter Name="Class" Guid="e0fe773f-c6e9-4fba-8211-72e25ef8a79f" Value="Game.SubsystemTemplate" Type="string"/>
