@@ -4,6 +4,10 @@
       "DisplayName": "示例方块",
       "Description": "这是一个来自生存战争示例模组的方块",
       "CRDescription:0": "无"
+    },
+    "ClothingBlock:1023": {
+      "DisplayName": "示例旧衬衫",
+      "Description": "这是一个来自生存战争示例模组的旧衬衫"
     }
   },
   "ContentWidgets": {

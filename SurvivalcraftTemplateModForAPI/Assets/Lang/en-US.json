@@ -4,6 +4,10 @@
       "DisplayName": "Template Block",
       "Description": "This is a block from Survivalcraft Template Mod.",
       "CRDescription:0": "Nothing"
+    },
+    "ClothingBlock:1023": {
+      "DisplayName": "Template Old Shirt",
+      "Description": "This is a block from Survivalcraft Template Old Shirt."
     }
   },
   "ContentWidgets": {
