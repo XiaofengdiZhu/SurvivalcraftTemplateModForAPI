@@ -45,6 +45,12 @@
 		<None Update="Assets\Lang\zh-CN.json">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</None>
+		<None Update="Assets\TemplateCraftingRecipes.cr">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="Assets\TemplateClothes.clo">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Include="ComponentTemplate.cs"/>
