@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Engine;
 
 namespace Game {
-    public class TemplateModLoader:ModLoader {
+    public class TemplateModLoader : ModLoader {
         public override void __ModInitialize() {
             ModsManager.RegisterHook("OnCameraChange", this);
         }
