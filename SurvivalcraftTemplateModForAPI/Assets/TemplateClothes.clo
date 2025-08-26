@@ -1,3 +1,3 @@
-<Mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://gitee.com/THPRC/survivalcraft-api/raw/SCAPI1.8/Survivalcraft/Content/Assets/Clothes.xsd">
+<Mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://gitee.com/SC-SPM/SurvivalcraftApi/raw/SCAPI1.8/Survivalcraft.Windows/Content/Assets/Clothes.xsd">
   <ClothingData Class="Game.ClothingData" Index="1" DisplayName="[ClothingBlock:1023]" Description="[ClothingBlock:1023]" Slot="Torso" ArmorProtection="0.1" Sturdiness="25" Insulation="2.0" MovementSpeedFactor="1" SteedMovementSpeedFactor="1" DensityModifier="0.0" IsOuter="False" CanBeDyed="True" Layer="1" PlayerLevelRequired="1" TextureName="Textures/Clothing/OldShirt" ImpactSoundsFolder=""/>
 </Mod>

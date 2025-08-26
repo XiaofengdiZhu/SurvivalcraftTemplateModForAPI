@@ -1,63 +1,64 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-	<PropertyGroup>
-		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-		<OutputType>Library</OutputType>
-		<RootNamespace>Game</RootNamespace>
-		<TargetFramework>net9.0</TargetFramework>
-		<AssemblyName>SurvivalcraftTemplateMod</AssemblyName>
-		<Deterministic>true</Deterministic>
-		<LangVersion>preview</LangVersion>
-		<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
-		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-		<GenerateDependencyFile>false</GenerateDependencyFile>
-		<ErrorReport>prompt</ErrorReport>
-	</PropertyGroup>
-	<PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-		<DebugType>pdbonly</DebugType>
-		<OutputPath>bin\Debug\</OutputPath>
-	</PropertyGroup>
-	<PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-		<DebugType>none</DebugType>
-		<OutputPath>bin\Release\</OutputPath>
-	</PropertyGroup>
-	<ItemGroup>
-		<PackageReference Include="SurvivalcraftAPI.Engine" Version="1.8.0"/>
-		<PackageReference Include="SurvivalcraftAPI.EntitySystem" Version="1.8.0"/>
-		<PackageReference Include="SurvivalcraftAPI.Survivalcraft" Version="1.8.0"/>
-	</ItemGroup>
-	<ItemGroup>
-		<None Update="modinfo.json">
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		</None>
-		<None Update="Assets\TemplateBlocksData.csv">
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		</None>
-		<None Update="Assets\TemplateDatabase.xdb">
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		</None>
-		<None Update="Assets\Widgets\TemplateWidget.xml">
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		</None>
-		<None Update="Assets\Lang\en-US.json">
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		</None>
-		<None Update="Assets\Lang\zh-CN.json">
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		</None>
-		<None Update="Assets\TemplateCraftingRecipes.cr">
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		</None>
-		<None Update="Assets\TemplateClothes.clo">
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		</None>
-	</ItemGroup>
-	<ItemGroup>
-		<Compile Include="ComponentTemplate.cs"/>
-		<Compile Include="SubsystemTemplate.cs"/>
-		<Compile Include="TemplateBlock.cs"/>
-		<Compile Include="TemplateModLoader.cs"/>
-		<Compile Include="TemplateReplaceBlock.cs"/>
-		<Compile Include="TemplateWidget.cs"/>
-	</ItemGroup>
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <OutputType>Library</OutputType>
+        <RootNamespace>Game</RootNamespace>
+        <TargetFramework>net9.0</TargetFramework>
+        <AssemblyName>SurvivalcraftTemplateMod</AssemblyName>
+        <Deterministic>true</Deterministic>
+        <LangVersion>preview</LangVersion>
+        <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+        <Nullable>disable</Nullable>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <GenerateDependencyFile>false</GenerateDependencyFile>
+        <ErrorReport>prompt</ErrorReport>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+        <DebugType>pdbonly</DebugType>
+        <OutputPath>bin\Debug\</OutputPath>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+        <DebugType>none</DebugType>
+        <OutputPath>bin\Release\</OutputPath>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="SurvivalcraftAPI.Engine" Version="1.8.1.2"/>
+        <PackageReference Include="SurvivalcraftAPI.EntitySystem" Version="1.8.1.2"/>
+        <PackageReference Include="SurvivalcraftAPI.Survivalcraft" Version="1.8.1.2"/>
+    </ItemGroup>
+    <ItemGroup>
+        <None Update="modinfo.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="Assets\TemplateBlocksData.csv">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="Assets\TemplateDatabase.xdb">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="Assets\Widgets\TemplateWidget.xml">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="Assets\Lang\en-US.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="Assets\Lang\zh-CN.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="Assets\TemplateCraftingRecipes.cr">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="Assets\TemplateClothes.clo">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="ComponentTemplate.cs"/>
+        <Compile Include="SubsystemTemplate.cs"/>
+        <Compile Include="TemplateBlock.cs"/>
+        <Compile Include="TemplateModLoader.cs"/>
+        <Compile Include="TemplateReplaceBlock.cs"/>
+        <Compile Include="TemplateWidget.cs"/>
+    </ItemGroup>
 </Project>
