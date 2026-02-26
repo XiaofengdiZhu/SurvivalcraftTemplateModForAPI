@@ -5,7 +5,7 @@ using Engine;
 namespace Game {
     public class TemplateModLoader : ModLoader {
         public override void __ModInitialize() {
-            ModsManager.RegisterHook("OnCameraChange", this);
+            ModsManager.RegisterHook("OnLoadingFinished", this);
         }
 
         public override void OnLoadingFinished(List<Action> actions) {

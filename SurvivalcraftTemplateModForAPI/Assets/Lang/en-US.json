@@ -1,4 +1,8 @@
 {
+  "TemplateReplaceBlock": {
+    "1": "Replaced Dirt",
+    "2": "This is a replaced dirt block from Survivalcraft Template Mod."
+  },
   "Blocks": {
     "TemplateBlock:0": {
       "DisplayName": "Template Block",
@@ -6,8 +10,8 @@
       "CRDescription:0": "Nothing"
     },
     "ClothingBlock:1023": {
-      "DisplayName": "Template Old Shirt",
-      "Description": "This is a block from Survivalcraft Template Old Shirt."
+      "DisplayName": "Template Replaced Old Shirt",
+      "Description": "This is a replaced old shirt from Survivalcraft Template Mod."
     }
   },
   "ContentWidgets": {

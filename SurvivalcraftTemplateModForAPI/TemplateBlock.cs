@@ -2,12 +2,10 @@
 
 namespace Game {
     public class TemplateBlock : CubeBlock {
-        //This is not needed anymore:
-        //public const int Index = 987;
-
         public override void Initialize() {
             base.Initialize();
-            Log.Information("Survivalcraft Template Mod: Template Block Loaded. 来自生存战争示例模组：示例方块已加载。");
+            int contents = BlocksManager.GetBlockIndex<TemplateBlock>();
+            Log.Information($"Survivalcraft Template Mod: Template Block Loaded (Contents: {contents}). 来自生存战争示例模组：示例方块已加载（ID：{contents}）。");
         }
     }
 }

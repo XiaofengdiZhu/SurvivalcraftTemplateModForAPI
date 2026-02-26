@@ -1,4 +1,8 @@
 {
+  "TemplateReplaceBlock": {
+    "1": "被替换的土方块",
+    "2": "这是一个被生存战争示例模组替换的土方块"
+  },
   "Blocks": {
     "TemplateBlock:0": {
       "DisplayName": "示例方块",
@@ -6,8 +10,8 @@
       "CRDescription:0": "无"
     },
     "ClothingBlock:1023": {
-      "DisplayName": "示例旧衬衫",
-      "Description": "这是一个来自生存战争示例模组的旧衬衫"
+      "DisplayName": "示例替换旧衬衫",
+      "Description": "这是一个被生存战争示例模组替换的旧衬衫"
     }
   },
   "ContentWidgets": {
