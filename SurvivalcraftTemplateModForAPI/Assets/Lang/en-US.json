@@ -6,7 +6,7 @@
   "Blocks": {
     "TemplateBlock:0": {
       "DisplayName": "Template Block",
-      "Description": "This is a block from Survivalcraft Template Mod.",
+      "Description": "This is a block from Survivalcraft Template Mod. It uses an external texture.",
       "CRDescription:0": "Nothing"
     },
     "ClothingBlock:1023": {

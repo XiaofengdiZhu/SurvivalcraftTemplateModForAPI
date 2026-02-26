@@ -23,33 +23,13 @@
         <OutputPath>bin\Release\</OutputPath>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="SurvivalcraftAPI.Engine" Version="1.8.1.3"/>
-        <PackageReference Include="SurvivalcraftAPI.EntitySystem" Version="1.8.1.3"/>
         <PackageReference Include="SurvivalcraftAPI.Survivalcraft" Version="1.8.1.3"/>
     </ItemGroup>
     <ItemGroup>
         <None Update="modinfo.json">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
-        <None Update="Assets\TemplateBlocksData.csv">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
-        <None Update="Assets\TemplateDatabase.xdb">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
-        <None Update="Assets\Widgets\TemplateWidget.xml">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
-        <None Update="Assets\Lang\en-US.json">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
-        <None Update="Assets\Lang\zh-CN.json">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
-        <None Update="Assets\TemplateCraftingRecipes.cr">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
-        <None Update="Assets\TemplateClothes.clo">
+        <None Update="Assets\**\*">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
     </ItemGroup>
@@ -61,4 +41,11 @@
         <Compile Include="TemplateReplaceBlock.cs"/>
         <Compile Include="TemplateWidget.cs"/>
     </ItemGroup>
+    <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+        <PropertyGroup>
+            <PathOfScmod>$(TargetDir)..\$(AssemblyName).scmod</PathOfScmod>
+        </PropertyGroup>
+        <ZipDirectory SourceDirectory="$(TargetDir)" DestinationFile="$(PathOfScmod)" Overwrite="true" />
+        <Message Text="The scmod file has been created: 已打包 scmod 文件到: $(PathOfScmod)" Importance="high" />
+    </Target>
 </Project>

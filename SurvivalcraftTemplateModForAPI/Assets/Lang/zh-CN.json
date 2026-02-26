@@ -6,7 +6,7 @@
   "Blocks": {
     "TemplateBlock:0": {
       "DisplayName": "示例方块",
-      "Description": "这是一个来自生存战争示例模组的方块",
+      "Description": "这是一个来自生存战争示例模组的方块，使用了外置材质",
       "CRDescription:0": "无"
     },
     "ClothingBlock:1023": {
