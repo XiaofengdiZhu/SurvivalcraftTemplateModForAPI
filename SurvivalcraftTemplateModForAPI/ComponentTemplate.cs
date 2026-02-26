@@ -3,6 +3,8 @@ using GameEntitySystem;
 using TemplatesDatabase;
 
 namespace Game {
+    // 组件都需要在一个 .xdb 文件中注册
+    // All new components must be registered in a .xdb file.
     public class ComponentTemplate : Component, IUpdateable {
         public ComponentPlayer m_componentPlayer;
 

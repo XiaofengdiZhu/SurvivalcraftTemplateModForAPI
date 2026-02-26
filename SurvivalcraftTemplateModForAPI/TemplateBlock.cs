@@ -2,6 +2,8 @@
 using Engine.Graphics;
 
 namespace Game {
+    // 新增方块都需要在一个 .csv 文件中注册
+    // All new blocks must be registered in a .csv file.
     public class TemplateBlock : CubeBlock {
         public Texture2D m_texture;
 
