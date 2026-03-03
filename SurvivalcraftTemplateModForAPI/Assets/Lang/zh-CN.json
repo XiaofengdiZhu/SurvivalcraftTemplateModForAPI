@@ -9,9 +9,17 @@
       "Description": "这是一个来自生存战争示例模组的方块，使用了外置材质",
       "CRDescription:0": "无"
     },
+    "ClothingBlock:654": {
+      "DisplayName": "示例新钻石头盔",
+      "Description": "这是一个来自生存战争示例模组的新钻石头盔"
+    },
+    "ClothingBlock:789": {
+      "DisplayName": "示例修改钻石头盔",
+      "Description": "这是一个被生存战争示例模组修改了的钻石头盔"
+    },
     "ClothingBlock:1023": {
       "DisplayName": "示例替换旧衬衫",
-      "Description": "这是一个被生存战争示例模组替换的旧衬衫"
+      "Description": "这是一个被生存战争示例模组替换了的旧衬衫"
     }
   },
   "ContentWidgets": {

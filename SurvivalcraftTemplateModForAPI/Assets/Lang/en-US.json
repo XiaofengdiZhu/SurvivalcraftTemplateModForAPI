@@ -9,6 +9,14 @@
       "Description": "This is a block from Survivalcraft Template Mod. It uses an external texture.",
       "CRDescription:0": "Nothing"
     },
+    "ClothingBlock:654": {
+      "DisplayName": "Template New Diamond Helmet",
+      "Description": "This is a new diamond helmet from Survivalcraft Template Mod."
+    },
+    "ClothingBlock:789": {
+      "DisplayName": "Template Modified Diamond Helmet",
+      "Description": "This is a diamond helmet modified by Survivalcraft Template Mod."
+    },
     "ClothingBlock:1023": {
       "DisplayName": "Template Replaced Old Shirt",
       "Description": "This is a replaced old shirt from Survivalcraft Template Mod."

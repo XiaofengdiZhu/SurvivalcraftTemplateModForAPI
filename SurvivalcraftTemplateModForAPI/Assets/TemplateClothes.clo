@@ -1,3 +1,11 @@
-<Mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://gitee.com/SC-SPM/SurvivalcraftApi/raw/SCAPI1.8/Survivalcraft.Windows/Content/Assets/Clothes.xsd">
-  <ClothingData Class="Game.ClothingData" Index="1" DisplayName="[ClothingBlock:1023]" Description="[ClothingBlock:1023]" Slot="Torso" ArmorProtection="0.1" Sturdiness="25" Insulation="2.0" MovementSpeedFactor="1" SteedMovementSpeedFactor="1" DensityModifier="0.0" IsOuter="False" CanBeDyed="True" Layer="1" PlayerLevelRequired="1" TextureName="Textures/Clothing/OldShirt" ImpactSoundsFolder=""/>
+<Mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://gitee.com/SC-SPM/SurvivalcraftApi/raw/SCAPI1.9/Survivalcraft/Content/Assets/Clothes.xsd">
+  <!-- Add a new kind of clothing, whoes attributes are same as the original diamond helmet's. -->
+  <!-- 添加一个 Index 为 654 的新衣物，它的属性和原版钻石头盔相同 -->
+  <ClothingData Class="Game.ClothingData" Index="654" DisplayName="[ClothingBlock:654]" Description="[ClothingBlock:654]" Slot="Head" ArmorProtection="1.0" Sturdiness="200" Insulation="2.0" MovementSpeedFactor="1" SteedMovementSpeedFactor="1" DensityModifier="0.2" IsOuter="True" CanBeDyed="False" Layer="1" PlayerLevelRequired="2" TextureName="Textures/Clothing/DiamondHelmet" ImpactSoundsFolder="Audio/Impacts/Metal" />
+  <!-- Modify the original diamond helmet's display name, description and armor protection to specified values. -->
+  <!-- 修改原版钻石头盔的显示名称、描述、护甲防护为指定值 -->
+  <ClothingData Class="Game.ClothingData" Index="21" New-DisplayIndex="34" New-DisplayName="[ClothingBlock:789]" New-Description="[ClothingBlock:789]" New-ArmorProtection="0.01"/>
+  <!-- Replace the original old shirt (Not Recomended) -->
+  <!-- 替换原版旧衬衫（不建议） -->
+  <ClothingData Class="Game.ClothingData" Index="1" DisplayIndex="2" DisplayName="[ClothingBlock:1023]" Description="[ClothingBlock:1023]" Slot="Torso" ArmorProtection="0.1" Sturdiness="25" Insulation="2.0" MovementSpeedFactor="1" SteedMovementSpeedFactor="1" DensityModifier="0.0" IsOuter="False" CanBeDyed="True" Layer="1" PlayerLevelRequired="1" TextureName="Textures/Clothing/OldShirt" ImpactSoundsFolder=""/>
 </Mod>
