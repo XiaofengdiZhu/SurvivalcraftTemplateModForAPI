@@ -30,4 +30,57 @@
   <!-- Remove a loot of seagull -->
   <!-- 删除海鸥的一个掉落物 -->
   <Parameter Name="2" Guid="c1e45187-f76b-4f1b-af54-c792698a07d9" Value="FeatherBlock;1;1" Type="string" Remove="true" />
+  <!-- Add a new creature -->
+  <!-- 添加一个新的生物 -->
+  <EntityTemplate Name="Wererhino" Guid="d81caaef-1ebe-4339-b26c-e3a53ebd0200" InheritanceParent="4d02fd7e-3054-4121-b2a5-787db985df5f">
+    <!-- Remove FourLeggedModel, add HumanModel -->
+    <!-- 移除四足模型，添加人类模型 -->
+    <MemberComponentTemplate Name="FourLeggedModel" Guid="e21c70a6-166d-4023-84ab-edef14f6ef72">
+      <Parameter Name="Class" Guid="3f3c8c0f-c345-4e39-b993-cd75ccc23c48" Value="Game.ComponentNoEffect" Type="string" />
+    </MemberComponentTemplate>
+    <MemberComponentTemplate Name="HumanModel" Guid="19b55f2d-ccf6-40aa-8b73-85dbec9435a3" InheritanceParent="0566662e-bb24-45f9-84d8-f3c1e5d083df">
+      <Parameter Name="WalkLegsAngle" Guid="26bef33a-82ae-4dc5-ae7c-d320fd620e09" Value="0.35" Type="float" />
+      <Parameter Name="ModelName" Guid="d9cd780e-3d7f-4928-9c37-e622510c11d4" Value="Models/Werewolf" Type="string" />
+      <Parameter Name="TextureOverride" Guid="e6fb4db1-84f6-4f4a-8c36-9cc079825e22" Value="Textures/Creatures/Rhino" Type="string" />
+      <Parameter Name="WalkAnimationSpeed" Guid="6f546e89-37f4-4cfa-9a6b-4a72867877d0" Value="0.65" Type="float" />
+      <Parameter Name="ModelScale" Guid="354f1469-f5c9-42ae-99b0-e49bb9aaa100" Value="2" Type="float" />
+    </MemberComponentTemplate>
+    <!-- Change the box size -->
+    <!-- 修改碰撞箱大小 -->
+    <MemberComponentTemplate Name="Body" Guid="9cadb6d5-e50d-47ae-a2ee-25c846286455">
+      <Parameter Name="BoxSize" Guid="b9949f8f-fbc5-4bfc-9290-6ec03f4826f9" Value="1.4,3.6,1.4" Type="Vector3" />
+    </MemberComponentTemplate>
+    <MemberComponentTemplate Name="Creature" Guid="7e99fdd5-78f7-4618-92ff-bf7d193c3db2">
+      <Parameter Name="Description" Guid="08c36c83-f1de-4edd-b86a-886dfa9b27ec" Value="[Description:4095]" Type="string" />
+      <Parameter Name="DisplayName" Guid="3d63f78a-05e4-4f25-9342-639e1df7de84" Value="[DisplayName:4095]" Type="string" />
+    </MemberComponentTemplate>
+    <ParameterSet Name="CreatureEggData" Guid="4e327f1a-8e62-4b21-a1e2-b60c31492670">
+      <Parameter Name="EggTypeIndex" Guid="b7099daa-67f1-4adc-a8c8-908c2a9ed063" Value="4095" Type="int" />
+      <Parameter Name="SwapUV" Guid="6345f6f8-8106-45ab-977b-c08adfb304c9" Value="True" Type="bool" />
+      <Parameter Name="DisplayName" Guid="58cb9b65-d688-4329-b773-3a5d804b0355" Value="[DisplayName:4096]" Type="string" />
+    </ParameterSet>
+  </EntityTemplate>
+  <!-- Add a new auto creature spawn rule -->
+  <!-- 添加一个新的生物自动生成规则 -->
+  <ParameterSet Name="CreatureSpawnRules" Guid="98c19e0b-ff62-4acc-8e58-def30e6257a3">
+    <!-- For this rule, check Game.StandardCreatureSpawnRule for more details -->
+    <!-- 对于这条规则，请查看 Game.StandardCreatureSpawnRule 以了解更多 -->
+    <ParameterSet Name="TemplateRuleWerewolf">
+      <Parameter Name="Name" Value="Wererhino" Type="string" /><!-- Required. The name of EntityTemplate you want to spawn. 必填，你要生成的 EntityTemplate 的名称 -->
+      <Parameter Name="Class" Value="Game.StandardCreatureSpawnRule" Type="string" /><!-- Required. The class of spawn rule. 必填，生成规则的类 -->
+      <Parameter Name="SpawnLocationType" Value="Surface" Type="Game.SpawnLocationType" /><!-- Default 默认: Surface -->
+      <Parameter Name="RandomSpawn" Value="True" Type="bool" /><!-- Default 默认: False -->
+      <Parameter Name="ConstantSpawn" Value="false" Type="bool" /><!-- Default 默认: False -->
+      <Parameter Name="MinTemperature" Value="5" Type="int" /><!-- Default 默认: 0 -->
+      <Parameter Name="MaxTemperature" Value="15" Type="int" /><!-- Default 默认: 15 -->
+      <Parameter Name="MinHumidity" Value="9" Type="int" /><!-- Default 默认: 0 -->
+      <Parameter Name="MaxHumidity" Value="15" Type="int" /><!-- Default 默认: 15 -->
+      <Parameter Name="AboveTopBlock" Value="True" Type="bool" /><!-- Default 默认: False -->
+      <Parameter Name="MinShoreDistance" Value="40" Type="float" /><!-- Default 默认: -Infinity -->
+      <Parameter Name="MaxShoreDistance" Value="Infinity" Type="float" /><!-- Default 默认: Infinity -->
+      <Parameter Name="Blocks" Value="LeavesBlock;WaterBlock;GrassBlock;DirtBlock" Type="string" /><!-- Default: (None) 默认: （无） -->
+      <Parameter Name="Suitability" Value="2.5" Type="float" /><!-- Default 默认: 1 -->
+      <Parameter Name="Count" Value="1" Type="int" /><!-- Default 默认: 1 -->
+    </ParameterSet>
+  </ParameterSet>
 </Mod>

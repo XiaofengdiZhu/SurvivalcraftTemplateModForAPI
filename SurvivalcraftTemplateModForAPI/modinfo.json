@@ -15,7 +15,7 @@
 
   // Mod description
   // 模组描述
-  "Description": "This is a simple mod project template for Survivalcraft API 1.9.0.0 and above. 这是一个适用于生存战争API 1.9.0.0及以上版本的简单模组示例项目",
+  "Description": "This is a simple mod project template for Survivalcraft API 1.9.0.0 and above. 这是一个适用于生存战争插件版 1.9.0.0 及以上版本的简单模组示例项目",
 
   // Target Survivalcraft game version (no functional impact)
   // 模组适配的生存战争游戏版本，没有实际用处

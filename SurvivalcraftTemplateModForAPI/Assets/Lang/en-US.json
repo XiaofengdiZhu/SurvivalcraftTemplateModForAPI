@@ -26,5 +26,14 @@
     "TemplateWidget": {
       "1": "Template Widget"
     }
+  },
+  "Database": {
+    "DisplayName": {
+      "4095": "Wererhino",
+      "4096": "Wrererhino Spawn Egg"
+    },
+    "Description": {
+      "4095": "This is a Wererhino from the Survivalcraft Template Mod"
+    }
   }
 }
