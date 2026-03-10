@@ -9,6 +9,9 @@ It's not enough to just develop a mod with this template. You also need to refer
 * Development Document 开发文档: [Development.md](https://gitee.com/SC-SPM/SurvivalcraftApi/blob/SCAPI1.9/docs/Development.md)
 * Architecture Document 架构文档：[Architecture.md](https://gitee.com/SC-SPM/SurvivalcraftApi/blob/SCAPI1.9/docs/Architecture.md)
 
+Developing mod requires .NET 10 SDK. If you have not installed it, please go to [official website](https://dotnet.microsoft.com/download/dotnet/10.0) to download and install it.  
+开发模组需要 .NET 10 SDK，如未安装，请到 [官网](https://dotnet.microsoft.com/download/dotnet/10.0) 下载安装
+
 ## Directory Structure 目录结构
 
 ### English
@@ -74,3 +77,8 @@ It's not enough to just develop a mod with this template. You also need to refer
 ├── SurvivalcraftTemplateModForAPI.sln.DotSettings # Rider/ReSharper 设置文件
 └── nuget.config                                   # NuGet 包源配置
 ```
+
+## Extra Suggestion 额外建议
+
+For your AI Agent to develop mods more accurately and efficiently, it's recommended to clone [SC-SPM/SurvivalcraftApi](https://gitee.com/SC-SPM/SurvivalcraftApi/) to current directory.  
+为了让你的 AI Agent 能更准确高效地开发模组，建议克隆 [SC-SPM/SurvivalcraftApi](https://gitee.com/SC-SPM/SurvivalcraftApi/) 到当前目录
