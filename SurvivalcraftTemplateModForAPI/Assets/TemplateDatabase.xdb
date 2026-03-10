@@ -1,7 +1,9 @@
 ﻿<Mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://gitee.com/SC-SPM/SurvivalcraftApi/raw/SCAPI1.9/Survivalcraft/Content/Assets/Database.xsd">
-  <!-- Add SubsystemTemplate to the Project -->
-  <!-- 将SubsystemTemplate添加到Project中 -->
+  <!-- Add SubsystemTemplate to the Project. The Guid attribute links this element to the original <ProjectTemplate Name="Project" …> -->
+  <!-- 将 SubsystemTemplate 添加到 Project 中。此处的 Guid 属性用于将该元素和原本的 <ProjectTemplate Name="Project" …> 连接起来-->
   <ProjectTemplate Name="Project" Guid="85023bf8-1c90-4dd1-9442-e6c13691d078">
+    <!-- The Guid attribute here should be a new random GUID, which does not point to any existing element -->
+    <!-- 此处的 Guid 属性需要使用新生成的随机 GUID，它不指向任何已存在的元素 -->
     <MemberSubsystemTemplate Name="TemplateBlockBehavior" Guid="3f8d8e1a-6ff4-4327-b546-d8d17e0f49f6" InheritanceParent="fefb9590-4972-4893-b02a-76063611b745">
       <Parameter Name="Class" Guid="e0fe773f-c6e9-4fba-8211-72e25ef8a79f" Value="Game.SubsystemTemplateBlockBehavior" Type="string"/>
     </MemberSubsystemTemplate>
@@ -9,6 +11,8 @@
   <!-- Add ComponentTemplate to the Player -->
   <!-- 将ComponentTemplate添加到Player中 -->
   <EntityTemplate Name="Player" Guid="4be6c1c5-d65d-4537-8a8b-a391969e6dc2">
+    <!-- The Guid attribute here makes this element inherit the <ComponentTemplate Name="ComponentTemplate" …> element below. So that you don't have to write <Parameter Name="Class" …> and <Parameter Name="LoadOrder" …> again. -->
+    <!--此处的 InheritanceParent 属性将此元素继承下面的 <ComponentTemplate Name="ComponentTemplate" …>，这样就不用重复填 <Parameter Name="Class" …>、<Parameter Name="LoadOrder" …> -->
     <MemberComponentTemplate Name="ComponentTemplate" Guid="bb7b00c2-32b6-44b8-bf86-e3ed640caa99" InheritanceParent="28680941-ec24-4ebc-84b9-17d42de6204c"/>
   </EntityTemplate>
   <Folder Name="Gameplay" Guid="d3d4b692-acc9-4128-9b99-a5acf1de1fbb">
