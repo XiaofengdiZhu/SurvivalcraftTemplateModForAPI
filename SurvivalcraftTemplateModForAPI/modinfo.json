@@ -1,6 +1,10 @@
 // The file of mod information, please modify according to your mod.
 // 模组信息文件，请根据你的模组的具体情况修改
 {
+  // Schema of the current json file.
+  // 当前 json 文件的数据结构
+  "$schema": "https://gitee.com/SC-SPM/SurvivalcraftApi/raw/SCAPI1.9/Survivalcraft/Content/modinfo-scheme.json",
+
   // Mod name
   // 模组名称
   "Name": "Survivalcraft Template Mod 生存战争示例模组",
