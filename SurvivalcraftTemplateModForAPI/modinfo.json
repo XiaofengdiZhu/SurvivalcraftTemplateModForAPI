@@ -67,7 +67,7 @@
 
   // Other mods that this mod depends on. See the link below for formatting rules.
   // 该模组依赖的其他模组，填写规则详见
-  // https://gitee.com/SC-SPM/SurvivalcraftApi/blob/SCAPI1.8/CHANGELOG.md#modinfojson%E9%87%8D%E5%A4%A7%E6%9B%B4%E6%96%B0
+  // https://gitee.com/SC-SPM/SurvivalcraftApi/blob/SCAPI1.8/docs/ModInfoConfig.md
   "Dependencies": {}
 
   // You can remove the comments above.

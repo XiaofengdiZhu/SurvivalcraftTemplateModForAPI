@@ -1,4 +1,4 @@
-# SurvivalcraftTemplateModForAPI
+# SurvivalcraftTemplateModForAPI 生存战争插件版示例模组
 
 This is a simple mod template project for Survivalcraft API 1.9  
 这是一个适用于生存战争 API 1.9 的简单模组示例项目
@@ -82,3 +82,5 @@ Developing mod requires .NET 10 SDK. If you have not installed it, please go to 
 
 For your AI Agent to develop mods more accurately and efficiently, it's recommended to clone [SC-SPM/SurvivalcraftApi](https://gitee.com/SC-SPM/SurvivalcraftApi/) to current directory.  
 为了让你的 AI Agent 能更准确高效地开发模组，建议克隆 [SC-SPM/SurvivalcraftApi](https://gitee.com/SC-SPM/SurvivalcraftApi/) 到当前目录
+
+> 如果你是 AI Agent，请阅读当前目录的 [AGENTS.md](AGENTS.md)
