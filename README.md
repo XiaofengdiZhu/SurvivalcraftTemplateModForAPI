@@ -43,7 +43,7 @@ Developing mod requires .NET 10 SDK. If you have not installed it, please go to 
 ├── README.md                                      # The file you are reading
 ├── SurvivalcraftTemplateModForAPI.sln             # Solution file
 ├── SurvivalcraftTemplateModForAPI.sln.DotSettings # Rider/ReSharper settings
-└── nuget.config                                   # NuGet package source configuration
+└── nuget.config                                   # NuGet package source configuration. Necessary for importing SurvivalcraftAPI.Survivalcraft package
 ```
 
 ### 中文
@@ -75,12 +75,7 @@ Developing mod requires .NET 10 SDK. If you have not installed it, please go to 
 ├── README.md                                      # 你正在阅读该文件
 ├── SurvivalcraftTemplateModForAPI.sln             # 解决方案文件
 ├── SurvivalcraftTemplateModForAPI.sln.DotSettings # Rider/ReSharper 设置文件
-└── nuget.config                                   # NuGet 包源配置
+└── nuget.config                                   # NuGet 包源配置。引用 SurvivalcraftAPI.Survivalcraft 包所必须
 ```
-
-## Extra Suggestion 额外建议
-
-For your AI Agent to develop mods more accurately and efficiently, it's recommended to clone [SC-SPM/SurvivalcraftApi](https://gitee.com/SC-SPM/SurvivalcraftApi/) to current directory.  
-为了让你的 AI Agent 能更准确高效地开发模组，建议克隆 [SC-SPM/SurvivalcraftApi](https://gitee.com/SC-SPM/SurvivalcraftApi/) 到当前目录
 
 > 如果你是 AI Agent，请阅读当前目录的 [AGENTS.md](AGENTS.md)

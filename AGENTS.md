@@ -14,11 +14,12 @@
 
 **模组运行方法（以 Windows 系统为例）**：
 
-1. 先构建生存战争插件版的 `Survivalcraft.Windows/Survivalcraft.Windows.csproj`
+1. 先构建（`dotnet build`）生存战争插件版的 `Survivalcraft.Windows/Survivalcraft.Windows.csproj`
 2. 构建你的模组，将打包好的 `.scmod` 文件放置到 `SurvivalcraftApi/Survivalcraft.Windows/bin/Debug/Mods` 目录中
 3. 运行 `SurvivalcraftApi/Survivalcraft.Windows/bin/Debug/Survivalcraft.exe`，告知用户游戏已启动，之后能从控制台看到所有日志输出
 
 ## 注意事项
 * 新建模组项目的 `.csproj` 文件时，请务必参考 `SurvivalcraftTemplateModForAPI/SurvivalcraftTemplateModForAPI.csproj`，作为最佳实践
+* 如果还原（`dotnet restore`）你的模组项目时出现找不到 `SurvivalcraftAPI.Survivalcraft` 的问题，请复制粘贴 `nuget.config` 文件到你的项目文件夹，然后重写还原
 * 编写界面布局文件时，不要瞎猜属性，而是要阅读部件定义，避免写出不存在的部件/属性、错误的属性值；另外，建议根据需求，主动参考功能相近的其他部件的布局文件和源码文件
 * 帮用户安装 .NET 10 SDK 时，可能会遇到网速/设备较慢而在过程中返回会话的情况，此时应根据日志检查是否安装出错，如果没有错误，则说明确实还在安装，请提醒用户等待安装完成后告知你；克隆 `SC-SPM/SurvivalcraftApi` 仓库时同理
