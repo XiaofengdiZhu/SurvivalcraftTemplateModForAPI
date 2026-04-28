@@ -15,7 +15,7 @@
 
   // Target API version. If it is below 1.8, the game will show a compatibility warning, but will still attempt to load the mod.
   // 模组适配的 API 版本，低于 1.8 的模组将警告可能无法使用，但还是会尝试加载
-  "ApiVersion": "1.9.0.0",
+  "ApiVersion": "1.9.0.2",
 
   // Mod description
   // 模组描述

@@ -26,6 +26,7 @@ Developing mod requires .NET 10 SDK. If you have not installed it, please go to 
 │   │   ├── Widgets/                               # UI Widget Layouts
 │   │   │   └── TemplateWidget.xml                 # Template widget layout
 │   │   ├── TemplateBlocksData.csv                 # Adds new block
+│   │   ├── TemplateReplaceBlocksData.csv          # Replaces the data of a original block
 │   │   ├── TemplateClothes.clo                    # Adds/modifies/removes clothes
 │   │   ├── TemplateCraftingRecipes.cr             # Adds/modifies/removes crafting recipes
 │   │   └── TemplateDatabase.xdb                   # Register subsystems, components, entities; modifies/removes something
@@ -58,6 +59,7 @@ Developing mod requires .NET 10 SDK. If you have not installed it, please go to 
 │   │   ├── Widgets/                               # 界面部件布局
 │   │   │   └── TemplateWidget.xml                 # 示例部件的界面布局
 │   │   ├── TemplateBlocksData.csv                 # 方块表（添加新方块）
+│   │   ├── TemplateReplaceBlocksData.csv          # 替换一个原版方块的数据
 │   │   ├── TemplateClothes.clo                    # 衣物数据（添加/修改/删除）
 │   │   ├── TemplateCraftingRecipes.cr             # 合成表（添加/修改/删除）
 │   │   └── TemplateDatabase.xdb                   # 数据库（注册子系统、组件、实体，修改/删除东西）

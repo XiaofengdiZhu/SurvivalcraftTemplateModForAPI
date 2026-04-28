@@ -23,7 +23,7 @@
         <OutputPath>bin\Release\</OutputPath>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="SurvivalcraftAPI.Survivalcraft" Version="1.9.0.0"/>
+        <PackageReference Include="SurvivalcraftAPI.Survivalcraft" Version="1.9.0.2"/>
     </ItemGroup>
     <ItemGroup>
         <None Update="modinfo.json">
