@@ -12,6 +12,9 @@ It's not enough to just develop a mod with this template. You also need to refer
 Developing mod requires .NET 10 SDK. If you have not installed it, please go to [official website](https://dotnet.microsoft.com/download/dotnet/10.0) to download and install it.  
 开发模组需要 .NET 10 SDK，如未安装，请到 [官网](https://dotnet.microsoft.com/download/dotnet/10.0) 下载安装
 
+For gltf model animations, there is a more complex template mod: [AdvancedGltfFoxModForSC](https://github.com/XiaofengdiZhu/AdvancedGltfFoxModForSC)  
+对于 gltf 模型动画，这里有一个更完善的专项示例模组：[AdvancedGltfFoxModForSC](https://github.com/XiaofengdiZhu/AdvancedGltfFoxModForSC)
+
 ## Directory Structure 目录结构
 
 ### English
