@@ -30,10 +30,12 @@
   "Database": {
     "DisplayName": {
       "4095": "Wererhino",
-      "4096": "Wrererhino Spawn Egg"
+      "4096": "Wrererhino Spawn Egg",
+      "BaseGltfFox": "Base glTF Fox"
     },
     "Description": {
-      "4095": "This is a Wererhino from the Survivalcraft Template Mod"
+      "4095": "This is a Wererhino from the Survivalcraft Template Mod",
+      "BaseGltfFox": "A fox from the Survivalcraft Template Mod. This creature demonstrates how to use glTF/GLB models with keyframe animations in Survivalcraft API."
     }
   }
 }

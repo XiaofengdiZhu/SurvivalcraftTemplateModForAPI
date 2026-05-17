@@ -20,11 +20,16 @@ Developing mod requires .NET 10 SDK. If you have not installed it, please go to 
 /workspace/
 ├── SurvivalcraftTemplateModForAPI/                # Source Code
 │   ├── Assets/                                    # Assets
+│   │   ├── Animations/                            # Model animation configurations
+│   │   │   └── BaseGltfFox.json                   # The animation configuration of a Fox model
 │   │   ├── Lang/                                  # Localization Languages
 │   │   │   ├── en-US.json                         # English language
 │   │   │   └── zh-CN.json                         # Chinese language
+│   │   ├── Models/                                # 3D Models
+│   │   │   └── BaseGltfFox/                       # The 3D model of a Fox
 │   │   ├── Widgets/                               # UI Widget Layouts
 │   │   │   └── TemplateWidget.xml                 # Template widget layout
+│   │   ├── BaseGltfFoxDatabase.xdb                # Register a fox entity
 │   │   ├── TemplateBlocksData.csv                 # Adds new block
 │   │   ├── TemplateReplaceBlocksData.csv          # Replaces the data of a original block
 │   │   ├── TemplateClothes.clo                    # Adds/modifies/removes clothes
@@ -53,11 +58,16 @@ Developing mod requires .NET 10 SDK. If you have not installed it, please go to 
 /workspace/
 ├── SurvivalcraftTemplateModForAPI/                # 源码
 │   ├── Assets/                                    # 资源
+│   │   ├── Animations/                            # 模型动画配置
+│   │   │   └── BaseGltfFox.json                   # 狐狸模型动画配置
 │   │   ├── Lang/                                  # 本地化语言
 │   │   │   ├── en-US.json                         # 英文语言
 │   │   │   └── zh-CN.json                         # 中文语言
+│   │   ├── Models/                                # 3D 模型
+│   │   │   └── BaseGltfFox/                       # 狐狸的 3D 模型
 │   │   ├── Widgets/                               # 界面部件布局
 │   │   │   └── TemplateWidget.xml                 # 示例部件的界面布局
+│   │   ├── BaseGltfFoxDatabase.xdb                # 注册狐狸实体的数据库
 │   │   ├── TemplateBlocksData.csv                 # 方块表（添加新方块）
 │   │   ├── TemplateReplaceBlocksData.csv          # 替换一个原版方块的数据
 │   │   ├── TemplateClothes.clo                    # 衣物数据（添加/修改/删除）

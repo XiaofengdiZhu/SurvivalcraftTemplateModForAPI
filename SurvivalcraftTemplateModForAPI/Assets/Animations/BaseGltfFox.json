@@ -1,0 +1,107 @@
+{
+  "template": "FourLegged",
+  "rootBoneRotation": 180,
+  "modelScale": 0.01,
+
+  "layers": {
+    "Head": {
+      "bones": [ "b_Head_05" ],
+      "driver": {
+        "type": "LookAt",
+        "properties": {
+          "TargetBoneName": "b_Head_05",
+          "MaxAngleX": 40,
+          "MaxAngleY": 15,
+          "PitchAxis": "Z",
+          "YawAxis": "Y"
+        }
+      }
+    },
+    "Death": {
+      "driver": {
+        "type": "Death",
+        "properties": {
+          "BodyDrop": -0.4
+        }
+      }
+    }
+  },
+
+  "animations": {
+    "idle": {
+      "source": "Survey",
+      "speed": 1.0,
+      "loop": true,
+      "blendDuration": 0.3
+    },
+    "walk": {
+      "source": "Walk",
+      "speed": "[SpeedAbs] * 0.65",
+      "loop": true,
+      "blendDuration": 0.2
+    },
+    "run": {
+      "source": "Run",
+      "speed": "[SpeedAbs] * 0.5",
+      "loop": true,
+      "blendDuration": 0.15
+    }
+  },
+
+  "states": {
+    "gait": {
+      "layer": "Base",
+      "rules": [
+        {
+          "condition": "IsDead",
+          "animation": null
+        },
+        {
+          "condition": "[SpeedAbs] > 0.7 * [WalkSpeed]",
+          "animation": { "source": "run" }
+        },
+        {
+          "condition": "[SpeedAbs] > 0.3",
+          "animation": { "source": "walk" }
+        },
+        {
+          "condition": "true",
+          "animation": { "source": "idle" }
+        }
+      ]
+    },
+    "lookAt": {
+      "layer": "Head",
+      "rules": [
+        {
+          "condition": "[DeathPhase] > 0",
+          "animation": null
+        },
+        {
+          "condition": "true",
+          "animation": { "source": "driver:LookAt" }
+        }
+      ]
+    },
+    "death": {
+      "layer": "Death",
+      "rules": [
+        {
+          "condition": "[DeathPhase] > 0",
+          "animation": { "source": "driver:Death" }
+        },
+        {
+          "condition": "true",
+          "animation": null
+        }
+      ]
+    }
+  },
+
+  "parameters": {
+    "WalkSpeed": 1.0,
+    "DeathSpeed": 3.0,
+    "LookAngleX": 0.0,
+    "LookAngleY": 0.0
+  }
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://gitee.com/SC-SPM/SurvivalcraftApi/raw/SCAPI1.9/Survivalcraft/Content/Assets/Database.xsd">
+  <!-- Fox - glTF Model Example -->
+  <EntityTemplate Name="BaseGltfFox" Guid="294c2d94-3ff0-44f7-9f81-67c678c9a3ed" InheritanceParent="e4275171-a39f-413f-8888-4c472868364d">
+    <MemberComponentTemplate Name="Body" Guid="d57339a1-a0ee-4586-94d9-0376c79043a2">
+      <Parameter Name="BoxSize" Guid="bac845da-b018-4ae4-a8ae-b39eac4c3450" Value="0.6,0.6,0.6" Type="Vector3" />
+      <Parameter Name="Mass" Guid="72fc6247-b37a-42ee-a00f-bddbc25cafaf" Value="40" Type="float" />
+      <Parameter Name="WaterTurnAxis" Guid="a1b2c3d4-e5f6-7890-abcd-ef1234567891" Value="1,0,0" Type="Vector3" />
+      <Parameter Name="WaterSwayAxis" Guid="9c9fa90c-5a16-49ce-8dad-f75e66c54242" Value="0,0,1" Type="Vector3" />
+    </MemberComponentTemplate>
+    <MemberComponentTemplate Name="Locomotion" Guid="673aa333-2eb5-40c7-9fb0-48b151e5ee97">
+      <Parameter Name="FlySpeed" Guid="f2a3b4c5-d6e7-8901-5678-012345678901" Value="0" Type="float" />
+      <Parameter Name="AccelerationFactor" Guid="a3b4c5d6-e7f8-9012-6789-123456789012" Value="1.5" Type="float" />
+      <Parameter Name="LadderSpeed" Guid="b4c5d6e7-f8a9-0123-7890-234567890123" Value="0" Type="float" />
+      <Parameter Name="WalkSpeed" Guid="87edba58-1532-4c3b-aaae-8fb54213343c" Value="5" Type="float" />
+      <Parameter Name="TurnSpeed" Guid="be34191c-2871-4c5c-bdb0-6d5e8339059e" Value="10" Type="float" />
+    </MemberComponentTemplate>
+    <!-- FourLeggedModel with glTF model -->
+    <MemberComponentTemplate Name="FourLeggedModel" Guid="b6c7d8e9-f0a1-2345-9012-456789012345" InheritanceParent="76d24f74-5f25-4d30-92ef-658c1a4d66c8">
+      <Parameter Name="ModelName" Guid="c7d8e9f0-a1b2-3456-0123-567890123456" Value="Models/BaseGltfFox/Fox" Type="string" />
+      <Parameter Name="TextureOverride" Guid="d8e9f0a1-b2c3-4567-1234-678901234567" Value="" Type="string" />
+      <!-- Animation config for keyframe animations -->
+      <Parameter Name="AnimationConfigPath" Guid="e9f0a1b2-c3d4-5678-2345-789012345678" Value="Animations/BaseGltfFox" Type="string" />
+      <!-- Disable procedural animation since we use keyframe -->
+      <Parameter Name="WalkFrontLegsAngle" Guid="f0a1b2c3-d4e5-6789-3456-890123456789" Value="0" Type="float" />
+      <Parameter Name="WalkHindLegsAngle" Guid="c31b137c-25a9-4ac1-82e4-a1c03f7fba26" Value="0" Type="float" />
+      <Parameter Name="CanTrot" Guid="b2c3d4e5-f6a7-8901-5678-012345678901" Value="False" Type="bool" />
+      <Parameter Name="WalkAnimationSpeed" Guid="c3d4e5f6-a7b8-9012-6789-123456789012" Value="1" Type="float" />
+    </MemberComponentTemplate>
+    <MemberComponentTemplate Name="WalkAroundBehavior" Guid="d4e5f6a7-b8c9-0123-7890-234567890123" InheritanceParent="aebb86ce-4ee6-4ca0-850d-cd60051e1d71" />
+    <MemberComponentTemplate Name="Creature" Guid="a7b8c9d0-e1f2-3456-0123-567890123456">
+      <Parameter Name="Category" Guid="b8c9d0e1-f2a3-4567-1234-678901234567" Value="LandPredator" Type="Game.CreatureCategory" />
+      <Parameter Name="KillVerbs" Guid="c9d0e1f2-a3b4-5678-2345-789012345678" Value="killed" Type="string" />
+      <Parameter Name="DisplayName" Guid="d0e1f2a3-b4c5-6789-3456-890123456789" Value="[DisplayName:BaseGltfFox]" Type="string" />
+      <Parameter Name="Description" Guid="e1f2a3b4-c5d6-7890-4567-901234567890" Value="[Description:BaseGltfFox]" Type="string" />
+    </MemberComponentTemplate>
+    <MemberComponentTemplate Name="ChaseBehavior" Guid="87218b1f-7208-4c89-bf92-970882bd12f8" InheritanceParent="31894441-d90a-4549-9264-db9dbe20e234">
+      <Parameter Name="NightChaseRange" Guid="0619fe99-edba-45f5-a0dc-87e51ee09008" Value="10" Type="float" />
+      <Parameter Name="DayChaseRange" Guid="ce8c8f2c-6b26-4cb7-b330-52008faea14d" Value="4" Type="float" />
+      <Parameter Name="NightChaseTime" Guid="b609956d-d5d3-4702-a6ba-854f0408f97a" Value="15" Type="float" />
+      <Parameter Name="ChaseNonPlayerProbability" Guid="e63c90ed-930b-4c91-8a3f-be3d175a4116" Value="0.03" Type="float" />
+    </MemberComponentTemplate>
+    <MemberComponentTemplate Name="Miner" Guid="71e59b0b-fd02-42fc-9679-62f4d3586d0d" InheritanceParent="8acca888-ba39-464f-bcf5-6ae15e448c62">
+      <Parameter Name="AttackPower" Guid="7f5ee5f6-0762-4ae3-995f-3dd4a74341a4" Value="1" Type="float" />
+    </MemberComponentTemplate>
+    <ParameterSet Name="CreatureEggData" Guid="c5d6e7f8-a9b0-1234-8901-345678901234">
+      <Parameter Name="TextureSlot" Guid="d6e7f8a9-b0c1-2345-9012-456789012345" Value="15" Type="int" />
+      <Parameter Name="Color" Guid="e7f8a9b0-c1d2-3456-0123-567890123456" Value="204,102,0" Type="Color" />
+      <Parameter Name="EggTypeIndex" Guid="9810bafe-b90d-4737-9451-fcb587218e14" Value="682" Type="int" />
+      <Parameter Name="DisplayName" Guid="78a68a44-4aea-496a-b886-c092feacb61e" Value="[DisplayName:BaseGltfFox]" Type="string" />
+    </ParameterSet>
+  </EntityTemplate>
+</Mod>
