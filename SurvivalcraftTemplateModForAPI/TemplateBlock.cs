@@ -9,6 +9,7 @@ namespace Game {
 
         public override void Initialize() {
             base.Initialize();
+            CanBeBuiltIntoFurniture = true;
             m_texture = ContentManager.Get<Texture2D>("Textures/GVGuidedDispenserBlock");
             int contents = BlocksManager.GetBlockIndex<TemplateBlock>();
             Log.Information($"Survivalcraft Template Mod: Template Block Loaded (Contents: {contents}). 来自生存战争示例模组：示例方块已加载（ID：{contents}）。");
@@ -18,7 +19,11 @@ namespace Game {
 
         public override int GetTextureSlotCount(int value) => 2;
 
-        public override void GenerateTerrainVertices(BlockGeometryGenerator generator, TerrainGeometry geometry, int value, int x, int y, int z) {
+        public override Texture2D GetDefaultTexture(int value) => m_texture;
+
+        // Belows are old way to use a custom texture. Since API 1.9.2.1, you can use GetDefaultTexture instead.
+        // 以下是旧的使用自定义纹理的方法。自 API 1.9.2.1 起，你可以使用 GetDefaultTexture 代替。
+        /*public override void GenerateTerrainVertices(BlockGeometryGenerator generator, TerrainGeometry geometry, int value, int x, int y, int z) {
             generator.GenerateCubeVertices(
                 this,
                 value,
@@ -47,6 +52,6 @@ namespace Game {
                 environmentData,
                 m_texture
             );
-        }
+        }*/
     }
 }
