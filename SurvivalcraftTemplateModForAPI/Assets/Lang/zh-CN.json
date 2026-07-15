@@ -37,5 +37,23 @@
       "4095": "这是一个来自生存战争示例模组的犀牛人",
       "BaseGltfFox": "来自生存战争示例模组的狐狸。此生物演示了如何在生存战争插件版中使用带有 glTF 关键帧动画的模型。"
     }
+  },
+  "TemplateMod": {
+    "Settings": {
+      "Group1": {
+        "1": "布尔值按钮",
+        "2": "这是一个使用布尔值按钮的设置"
+      }
+    }
+  },
+  "ModSettings": {
+    "xfdz.SurvivalcraftTemplateMod": {
+      "TemplateModSettingsGroup1": {
+        "TemplateModSettingsItem2": {
+          "Name": "数字滑动条",
+          "Description": "这是一个使用数字滑动条的设置"
+        }
+      }
+    }
   }
 }

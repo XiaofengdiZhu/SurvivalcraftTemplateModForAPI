@@ -37,5 +37,23 @@
       "4095": "This is a Wererhino from the Survivalcraft Template Mod",
       "BaseGltfFox": "A fox from the Survivalcraft Template Mod. This creature demonstrates how to use glTF/GLB models with keyframe animations in Survivalcraft API."
     }
+  },
+  "TemplateMod": {
+    "Settings": {
+      "Group1": {
+        "1": "Bool Button",
+        "2": "This is a setting using the bool button."
+      }
+    }
+  },
+  "ModSettings": {
+    "xfdz.SurvivalcraftTemplateMod": {
+      "TemplateModSettingsGroup1": {
+        "TemplateModSettingsItem2": {
+          "Name": "Number Slider",
+          "Description": "This is a setting using the number slider."
+        }
+      }
+    }
   }
 }

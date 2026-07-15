@@ -99,7 +99,7 @@
   },
 
   "parameters": {
-    "WalkSpeed": 1.0,
+    "WalkSpeed": 5.0,
     "DeathSpeed": 3.0,
     "LookAngleX": 0.0,
     "LookAngleY": 0.0

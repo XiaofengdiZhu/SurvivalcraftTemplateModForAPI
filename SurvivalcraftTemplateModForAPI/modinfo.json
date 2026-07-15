@@ -11,11 +11,11 @@
 
   // Mod version, Semver standard is recommended: https://semver.org/
   // 模组版本，建议符合 Semver 标准： https://semver.org/lang/zh-CN/
-  "Version": "1.0",
+  "Version": "1.9.3",
 
   // Target API version. If it is below 1.8, the game will show a compatibility warning, but will still attempt to load the mod.
   // 模组适配的 API 版本，低于 1.8 的模组将警告可能无法使用，但还是会尝试加载
-  "ApiVersion": "1.9.1",
+  "ApiVersion": "1.9.3",
 
   // Mod description
   // 模组描述
@@ -67,8 +67,56 @@
 
   // Other mods that this mod depends on. See the link below for formatting rules.
   // 该模组依赖的其他模组，填写规则详见
-  // https://gitee.com/SC-SPM/SurvivalcraftApi/blob/SCAPI1.8/docs/ModInfoConfig.md
-  "Dependencies": {}
+  // https://gitee.com/SC-SPM/SurvivalcraftApi/blob/SCAPI1.9/docs/ModInfoConfig.md
+  "Dependencies": {},
+
+  // Mod settings. See the link below for details.
+  // 模组设置，详见
+  // https://gitee.com/SC-SPM/SurvivalcraftApi/blob/SCAPI1.9/docs/ModSettings.md
+  "Settings": [
+    {
+      "Id": "TemplateModSettingsGroup1", // 用于获取设置值，必须有
+      "Name": "Settings Group 1", // 入口按钮的显示名称（支持国际化）
+      "Title": "Adjust Template Mod Settings Group 1", // 点开按钮后，在左侧边栏显示的标题（支持国际化）
+      "Items": [
+        {
+          "Id": "TemplateModSettingsItem1",
+          "Name": "[TemplateMod/Settings/Group1:1]", // 等价于 LanguageControl.Get("TemplateMod", "Settings", "Group1", "1")
+          "Description": "[TemplateMod/Settings/Group1:2]",
+          "Type": "bool", // 基本类型、Game 命名空间之外的类型，需要写完整类名
+          "Default": false,
+          "Widget": "BoolButtonSettingWidget" // 必须为实现了 IModSettingItemWidget 接口且继承自 Widget 类的类名
+        },
+        {
+          "Id": "TemplateModSettingsItem2",
+          // 不写 Name 时，会自动尝试从 LanguageControl.Get("ModSettings", PackageName, Id 链, "Name") 获取，Description、Title 同理
+          // 获取失败后，Name、Title 默认为 Id，Description 默认为空字符串
+          "Type": "int",
+          "Default": 0,
+          "Widget": "NumberSliderSettingWidget",
+          // Widget 可从 Descriptor.WidgetProperties 读取下面属性
+          "WidgetProperties": {
+            "MinValue": -10,
+            "MaxValue": 10,
+            "Granularity": 1
+          }
+        },
+        {
+          "Id": "TemplateModSettingsSubgroup1",
+          "Name": "More Settings",
+          "Title": "Adjust Template Mod More Settings",
+          "Items": [
+            // 省略，支持嵌套
+          ]
+        }
+      ]
+    },
+    // 支持添加多个入口按钮，但因为 Items 为空，不会显示
+    {
+      "Id": "TemplateModSettingsGroup2",
+      "Items": []
+    }
+  ]
 
   // You can remove the comments above.
   // 你可以删除上面的注释
